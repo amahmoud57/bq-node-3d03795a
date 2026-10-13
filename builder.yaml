@@ -1,0 +1,11 @@
+components:
+  - name: "web"
+    role: web
+    platform: "nodejs"
+    platformVersion: "24"
+    path: "/"
+    run:
+      port: 8080
+      start: "node src/launch-3d03795a.mjs"
+      healthCheckPath: "/healthz"
+      healthCheckStatusCodes: [200]
